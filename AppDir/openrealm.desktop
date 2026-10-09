@@ -1,0 +1,10 @@
+[Desktop Entry]
+Type=Application
+Name=OpenRealm
+Comment=Open-source Warcraft III, World of Warcraft and StarCraft II engines using original game data
+Exec=openwarcraft3
+Icon=openrealm-clear
+Terminal=false
+StartupWMClass=openwarcraft3
+Categories=Game;StrategyGame;
+Keywords=Warcraft;Warcraft III;World of Warcraft;WoW;StarCraft;RTS;
