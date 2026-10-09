@@ -1,0 +1,16 @@
+#!/bin/sh
+dir=$DATADIR/openrealm
+mkdir -p "$dir"
+if [ ! -f $DATADIR/warcraft-3/config.cfg ]; then
+  mkdir -p $DATADIR/warcraft-3
+  cp "$APPDIR"/bin/wc3/config.cfg $DATADIR/warcraft-3/
+fi
+if [ ! -f $DATADIR/starcraft-2/config.cfg ]; then
+  mkdir -p $DATADIR/starcraft-2
+  cp "$APPDIR"/bin/sc2/config.cfg $DATADIR/starcraft-2/
+fi
+if [ ! -f $DATADIR/world-of-warcraft/config.cfg ]; then
+  mkdir -p $DATADIR/world-of-warcraft
+  cp "$APPDIR"/bin/wow/config.cfg $DATADIR/world-of-warcraft/
+fi
+set -- "$@" -data "$dir"
